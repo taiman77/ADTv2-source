@@ -1,5 +1,5 @@
 ---
-name: "androidtokenv2"
+name: "androidtokenV2"
 suites:
 - "precise"
 architectures:

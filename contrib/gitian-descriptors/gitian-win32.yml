@@ -18,7 +18,7 @@ remotes:
 files:
 - "qt-win32-4.8.5-gitian-r7.zip"
 - "boost-win32-1.53.0-gitian-r6.zip"
-- "adtv2coin-deps-win32-gitian-r12.zip"
+- "adtv2coin-deps-win32-gitian-r13.zip"
 script: |
   #
   STAGING=$HOME/staging
@@ -28,7 +28,7 @@ script: |
   cd $STAGING
   unzip ../build/qt-win32-4.8.5-gitian-r7.zip
   unzip ../build/boost-win32-1.53.0-gitian-r6.zip
-  unzip ../build/adtv2coin-deps-win32-gitian-r12.zip
+  unzip ../build/adtv2coin-deps-win32-gitian-r13.zip
   cd $HOME/build/
   #
   cd ADTv2-source
@@ -36,7 +36,7 @@ script: |
   mkdir -p $OUTDIR/src
   git archive HEAD | tar -x -C $OUTDIR/src
   cp $OUTDIR/src/doc/README_windows.txt $OUTDIR/readme.txt
-  cp $OUTDIR/src/COPYING $OUTDIR/COPYING.txt
+  #cp $OUTDIR/src/COPYING $OUTDIR/COPYING.txt
   export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
   export FAKETIME=$REFERENCE_DATETIME
   export TZ=UTC

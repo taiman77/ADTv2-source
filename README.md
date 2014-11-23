@@ -1,6 +1,6 @@
-####  AndroidsTokensv2 Cryptographic Commodity ###
+####  AndroidsTokensv2 Unofficial  ###
 
-Created By THE CryptoRepairCrew
+Orginal Created By THE CryptoRepairCrew and Fork by Taiman
 
 * Proof of Work/Proof of Stake Hybrid
 * Scrypt
