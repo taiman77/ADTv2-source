@@ -32,6 +32,9 @@ script: |
   cd $HOME/build/
   #
   cd ADTv2-source
+  cp src/qt/res/icons/AndroidsTokensV2.icns src/qt/res/icons/AndroidsTokensv2.icns
+  cp src/qt/res/icons/AndroidsTokensV2.ico src/qt/res/icons/AndroidsTokensv2.ico
+
   export PATH=$STAGING/host/bin:$PATH
   mkdir -p $OUTDIR/src
   git archive HEAD | tar -x -C $OUTDIR/src
